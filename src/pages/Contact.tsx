@@ -35,14 +35,13 @@ export default function Contact() {
 
       <section className="bg-night pb-24 pt-36 text-white sm:pb-32 sm:pt-44">
         <div className="section-shell">
-          <div className="grid gap-5 md:grid-cols-[260px_1fr]">
-            <p className="text-base leading-6 text-white/85">Kontakt</p>
-            <h1 className="max-w-4xl font-display text-5xl leading-tight text-copper sm:text-7xl">
-            Toto sú naše kontakty. Zvyčajne odpovedáme do jedného dňa.
-          </h1>
+          <div className="mx-auto max-w-4xl">
+            <h1 className="text-center font-display text-5xl leading-tight text-copper sm:text-7xl">
+              Toto sú naše kontakty. Zvyčajne odpovedáme do jedného dňa.
+            </h1>
           </div>
 
-          <div className="mt-24 space-y-14">
+          <div className="mx-auto mt-24 max-w-4xl space-y-14">
             {contacts.map((contact, index) => (
               <div key={contact.value} className="grid gap-4 md:grid-cols-[260px_1fr]">
                 <div className="text-base text-white/85">{contact.type}</div>

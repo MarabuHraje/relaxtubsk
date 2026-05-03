@@ -18,10 +18,9 @@ export default function About() {
           fetchPriority="high"
         />
         <div className="absolute inset-0 bg-night/58" />
-        <div className="section-shell relative grid gap-5 pb-28 pt-36 sm:pt-44 md:grid-cols-[260px_1fr]">
-          <p className="text-base leading-6 text-white/85">O nás</p>
-          <div className="max-w-4xl">
-            <h1 className="font-display text-5xl leading-tight text-copper sm:text-7xl">
+        <div className="section-shell relative pb-28 pt-36 sm:pt-44">
+          <div className="mx-auto max-w-4xl">
+            <h1 className="text-center font-display text-5xl leading-tight text-copper sm:text-7xl">
               Ahoj! Sme rodinná firma
             </h1>
 

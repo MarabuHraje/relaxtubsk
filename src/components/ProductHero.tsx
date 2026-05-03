@@ -14,7 +14,7 @@ export default function ProductHero({ product }: ProductHeroProps) {
     { label: 'Výška', value: product.height },
     { label: 'Sedenie', value: originalPeople(product.seating) },
     { label: 'Hĺbka suda', value: product.tubDepth },
-    { label: 'Záruka', value: '24 months' },
+    { label: 'Záruka', value: '24 mesiacov' },
   ]
 
   return (
@@ -29,14 +29,11 @@ export default function ProductHero({ product }: ProductHeroProps) {
 
       <div className="section-shell relative flex min-h-[calc(100vh-5rem)] items-center pt-[7rem] pb-16">
         <div className="w-full min-w-0 max-w-[calc(100vw-2rem)] sm:max-w-5xl">
-          {product.slug === 'quadro' && (
-            <p className="eyebrow text-copper">Nový model</p>
-          )}
-          <h1 className="mt-5 max-w-5xl font-display text-3xl leading-tight text-white sm:text-6xl lg:text-9xl">
+          <h1 className="max-w-5xl font-display text-3xl leading-tight text-white sm:text-6xl lg:text-9xl">
             {product.title}
           </h1>
 
-          <dl className="mt-8 grid max-w-3xl grid-cols-2 sm:grid-cols-3">
+          <dl className="mt-8 grid max-w-3xl grid-cols-2 divide-x divide-y divide-copper/10 border-y border-copper/10 sm:grid-cols-3">
             {heroStats.map((stat) => (
               <div key={stat.label} className="p-4 lg:p-6">
                 <dt className="text-sm text-white/60 lg:text-base">{stat.label}</dt>
