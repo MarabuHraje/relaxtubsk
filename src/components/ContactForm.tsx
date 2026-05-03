@@ -172,6 +172,8 @@ export default function ContactForm({ initialModel, compact = false }: ContactFo
       </label>
       {errors.consent && <p className="mt-2 text-xs text-red-700">{errors.consent}</p>}
 
+      <p className="mt-5 text-sm leading-6 text-muted">ESOX - možnosť splácania</p>
+
       <button type="submit" className="btn mt-6 w-full sm:w-auto">
         Odošlite svoju požiadavku
       </button>

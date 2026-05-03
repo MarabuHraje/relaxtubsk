@@ -82,6 +82,9 @@ export default function ProductConfigurator({ product }: ProductConfiguratorProp
       <h2 className="text-center font-display text-4xl leading-tight text-ink sm:text-6xl">
         Odošlite svoju požiadavku
       </h2>
+      <p className="mx-auto mt-4 max-w-2xl text-center text-base leading-7 text-muted">
+        ESOX - možnosť splácania
+      </p>
 
       <form className="mt-10 grid gap-8 lg:grid-cols-2" name="calc" method="post" onSubmit={handleSubmit}>
         <div>
@@ -210,6 +213,7 @@ export default function ProductConfigurator({ product }: ProductConfiguratorProp
               Odoslať žiadosť →
             </button>
             <p className="mt-4 text-sm text-muted">Nemusíte teraz nič platiť</p>
+            <p className="mt-2 text-sm text-muted">ESOX - možnosť splácania</p>
           </div>
         </aside>
       </form>
